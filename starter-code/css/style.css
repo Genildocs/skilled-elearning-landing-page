@@ -5,38 +5,3 @@
      font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-body{
-    min-height: 100vh;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-}
-
-.father-article{
-     display: flex;
-     justify-content: center;
-}
-
-.session-card {
-     display: grid;
-     grid-template-columns: 350px 350px 350px;
-     grid-template-rows: 350px 350px;
-     column-gap: 30px;
-     row-gap: 55px;
-}
-
-.card {
-     border: 2px solid red;
-}
-
-footer{
-     height: 10vh;
-     background: #13183F;
-     
-}
-.nav-footer {     
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     height: 50%;
-
-}
-
