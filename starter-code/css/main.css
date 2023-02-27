@@ -8,7 +8,7 @@
 }
 .btn-nav {
   background-color: #13183F;
-  box-shadow: 0px 0.9rem 0.8rem #888888;
+  box-shadow: 0 0.9rem 0.8rem #888888;
   transition: 0.5s;
 }
 .btn-nav:hover {
