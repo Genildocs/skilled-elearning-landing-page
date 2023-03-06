@@ -1,3 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body {
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3.8rem;
+}
+.header__nav__img {
+  height: 2.7rem;
+  width: 11rem;
+}
+
 .btn {
   width: 16.5rem;
   height: 5.6rem;
@@ -16,44 +43,6 @@
 }
 .btn-nav:active {
   background-color: #3645b5;
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-html body {
-  min-height: 100vh;
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-/* body{
-    min-height: 100vh;
-} */
-.header__nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 3.8rem;
-}
-.header__nav__img {
-  height: 2.7rem;
-  width: 11rem;
-}
-
-.session-center {
-  display: flex;
-  justify-content: space-around;
-}
-.session-center img {
-  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
