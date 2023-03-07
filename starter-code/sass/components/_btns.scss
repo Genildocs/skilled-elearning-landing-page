@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .btn {
   width: 16.5rem;
@@ -9,9 +10,10 @@
   border: none;
 
   &-nav {
+    @include mixins.font-paragraph;
     background-color: variables.$themedark-color;
     box-shadow: 0 0.9rem 0.8rem variables.$color-grey;
-    transition: 0.5s;
+    transition: all 0.5s;
     &:hover {
       background-color: lighten(variables.$themedark-color, 8%);
     }

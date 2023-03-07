@@ -25,6 +25,12 @@ html body {
   width: 11rem;
 }
 
+.article__section-center {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+
 .btn {
   width: 16.5rem;
   height: 5.6rem;
@@ -34,9 +40,12 @@ html body {
   border: none;
 }
 .btn-nav {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-decoration: none;
   background-color: #13183F;
   box-shadow: 0 0.9rem 0.8rem #888888;
-  transition: 0.5s;
+  transition: all 0.5s;
 }
 .btn-nav:hover {
   background-color: #1c245e;

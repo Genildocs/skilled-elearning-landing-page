@@ -1,0 +1,8 @@
+@use "../abstracts/mixins";
+
+.article__section-center{
+    @include mixins.flex;
+    justify-content: center;
+
+      
+}
