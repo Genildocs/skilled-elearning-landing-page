@@ -28,12 +28,15 @@ html body {
 .article__section-center {
   display: flex;
   justify-content: space-around;
-  justify-content: center;
+}
+.article__section-center .section-center--text {
+  width: 50%;
 }
 .article__section-center .section-center--image {
-  position: relative;
-  transform: translateY(-20rem) translateX(28rem);
-  z-index: -1;
+  width: 50%;
+}
+.article__section-center .section-center--image .center--image {
+  width: 100%;
 }
 
 .btn {
