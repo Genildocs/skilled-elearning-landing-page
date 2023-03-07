@@ -4,5 +4,17 @@
     @include mixins.flex;
     justify-content: center;
 
+    // .section-center--text{
+
+    // }
+
+    .section-center--image{
+        position: relative;
+        transform: translateY(-20rem) translateX(28rem);
+        z-index: -1;
+        
+                
+    }
       
 }
+
