@@ -48,16 +48,13 @@ html body {
 .article__section-center .section-center--image {
   width: 50%;
   height: 60rem;
-  position: relative;
 }
 .section-center--image > img{
   display: block;
   width: 65rem;
   height: 65rem;
   object-fit: contain;
-  position: absolute;
-  top: -12rem;
-  right: -12rem;
+  transform: translate(100px, -100px);
 }
 .article__section-center .section-center--image .center--image {
   width: 100%;
