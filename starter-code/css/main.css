@@ -13,12 +13,17 @@ html body {
   min-height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-
+.main__article{
+  overflow-x: hidden;
+}
 .header__nav {
   display: flex;
+  width: 100%;
   justify-content: space-around;
+  background-color: transparent;
   align-items: center;
-  margin-top: 3.8rem;
+  padding: 1rem 0px;
+  position: absolute;
 }
 .header__nav__img {
   height: 2.7rem;
@@ -26,14 +31,33 @@ html body {
 }
 
 .article__section-center {
+  width: 100%;
   display: flex;
+  height: fit-content;
+  align-items: flex-start;
   justify-content: space-around;
 }
 .article__section-center .section-center--text {
   width: 50%;
+  min-height: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .article__section-center .section-center--image {
   width: 50%;
+  height: 60rem;
+  position: relative;
+}
+.section-center--image > img{
+  display: block;
+  width: 65rem;
+  height: 65rem;
+  object-fit: contain;
+  position: absolute;
+  top: -12rem;
+  right: -12rem;
 }
 .article__section-center .section-center--image .center--image {
   width: 100%;
