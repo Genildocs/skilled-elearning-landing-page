@@ -22,4 +22,9 @@
       background-color: lighten(variables.$themedark-color, 30%);
     }
   }
+
+  &-footer {
+    @include mixins.font-paragraph;
+    background-image: linear-gradient(to  bottom, rgba(variables.$color-blue, 0.8), rgba(variables.$color-pink-fort,0.8));
+  }
 }

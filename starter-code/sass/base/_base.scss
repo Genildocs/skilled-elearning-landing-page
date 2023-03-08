@@ -10,7 +10,8 @@ html {
     font-size: 62.5%;
 
     body {
-        min-height: 100vh;
+        min-height: calc(100vh - 12rem);
         font-family: "Plus Jakarta Sans", sans-serif;
+        box-sizing: border-box;
     }
 }

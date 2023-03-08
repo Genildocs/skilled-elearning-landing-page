@@ -1,17 +1,2 @@
 @use "../abstracts/mixins";
 
-.article__section-center {
-    @include mixins.flex;
-    
-    .section-center--text {
-        width: calc(100% / 2);
-    }
-
-    .section-center--image {
-        width: calc(100% / 2);
-
-        .center--image {
-            width: 100%;
-        }
-    }
-}

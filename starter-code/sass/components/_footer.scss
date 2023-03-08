@@ -1,0 +1,9 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.footer__nav{
+    @include mixins.flex;
+    align-items: center;
+    background-color: variables.$themedark-color;
+    height: 12rem;
+}

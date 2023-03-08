@@ -37,13 +37,10 @@
             </p>
             <button class="btn-article">Get Started</button>
           </div>
-          <div class="section-center--image">
-            <img
-              src="./assets/image-hero-desktop.png"
-              alt="woman drinking coffee"
-              class="center--image"
-            />
-          </div>
+          <picture class="section-center--image">
+            <source media="(max-width:500px)" srcset="./assets/image-hero-mobile.png">
+            <img src="./assets/image-hero-desktop.png" alt="Woman drinking coffee." class="card--image">
+          </picture>
         </section>
 
         <section class="article__section-card">
@@ -133,7 +130,7 @@
           alt="logo-image"
           class="footer-image"
         />
-        <button class="btn-footer">Get Started</button>
+        <button class="btn btn-footer">Get Started</button>
       </nav>
     </footer>
   </body>
