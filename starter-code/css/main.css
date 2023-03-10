@@ -56,6 +56,12 @@ html body {
   text-decoration: none;
   background-image: linear-gradient(to bottom, rgb(72, 81, 255), rgb(240, 42, 166));
 }
+.btn-footer:hover {
+  background: #f350b6;
+}
+.btn-footer:active {
+  background: #fab9e2;
+}
 
 .footer__nav {
   display: flex;

@@ -26,5 +26,15 @@
   &-footer {
     @include mixins.font-paragraph;
     background-image: linear-gradient(to  bottom, variables.$color-blue, variables.$color-pink-fort);
+    
+    &:hover{
+      background: lighten(variables.$color-pink-fort, 8%);
+    }
+
+    &:active{
+      background: lighten(variables.$color-pink-fort, 30%);
+    }
   }
+
+  
 }
