@@ -13,6 +13,7 @@ html body {
   min-height: calc(100vh - 12rem);
   font-family: "Plus Jakarta Sans", sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .header__nav {
@@ -24,6 +25,34 @@ html body {
 .header__nav__img {
   height: 2.7rem;
   width: 11rem;
+}
+
+.main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main__article .article__section-center {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+.main__article .article__section-center .section-center--text {
+  border: 2px solid red;
+}
+.main__article .article__section-center .section-center--image {
+  transform: translateX(35rem) translateY(-20rem);
+  border: 2px solid red;
+  z-index: -1;
+}
+.main__article .article__section-center .section-center--image .card--image {
+  width: 100%;
+  /* transform: translateX(45.5rem) translateY(-25rem); */
+  /* transform: translateX(45%) translateY(-25%); */
+}
+.main__article .article__section-card {
+  display: grid;
+  grid-template-columns: repeat(3, 35rem);
 }
 
 .btn {

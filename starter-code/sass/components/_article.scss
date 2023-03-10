@@ -1,2 +1,37 @@
 @use "../abstracts/mixins";
 
+.main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.main__article{
+
+    .article__section-center{
+        @include mixins.flex;
+        justify-content: center;
+
+        .section-center--text{
+            border: 2px solid red;
+            
+        }
+
+        .section-center--image{
+            transform: translateX(35rem) translateY(-20rem);
+            border: 2px solid red;
+            z-index: -1;
+
+            .card--image{
+                width: 100%;
+                /* transform: translateX(45.5rem) translateY(-25rem); */
+                /* transform: translateX(45%) translateY(-25%); */
+            }
+        
+        }
+    }
+
+    .article__section-card{
+        display: grid;
+        grid-template-columns: repeat(3,35rem);
+    }
+}

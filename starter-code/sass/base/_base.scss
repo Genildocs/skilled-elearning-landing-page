@@ -13,5 +13,6 @@ html {
         min-height: calc(100vh - 12rem);
         font-family: "Plus Jakarta Sans", sans-serif;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 }
