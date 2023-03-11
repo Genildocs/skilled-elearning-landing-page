@@ -33,26 +33,33 @@ html body {
 }
 
 .main__article .article__section-center {
-  display: flex;
-  justify-content: space-around;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .main__article .article__section-center .section-center--text {
   border: 2px solid red;
 }
 .main__article .article__section-center .section-center--image {
-  transform: translateX(35rem) translateY(-20rem);
+  /* transform: translateX(45rem) translateY(-20rem); */
   border: 2px solid red;
   z-index: -1;
+  /* width: 600px;
+  height: 600px; */
 }
 .main__article .article__section-center .section-center--image .card--image {
   width: 100%;
+  border: 2px solid red;
   /* transform: translateX(45.5rem) translateY(-25rem); */
   /* transform: translateX(45%) translateY(-25%); */
 }
 .main__article .article__section-card {
   display: grid;
-  grid-template-columns: repeat(3, 35rem);
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid red;
+  row-gap: 1rem;
+}
+.main__article .article__section-card [class^=section-card--] {
+  border: 2px solid red;
 }
 
 .btn {
