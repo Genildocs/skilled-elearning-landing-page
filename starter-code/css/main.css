@@ -14,6 +14,7 @@ html body {
   font-family: "Plus Jakarta Sans", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
 }
 
 .header__nav {
@@ -28,31 +29,48 @@ html body {
 }
 
 .main {
-  max-width: 1140px;
+  max-width: 114rem;
   margin: 0 auto;
 }
 
-.main__article .article__section-center {
+/* SESSION TEXT/IMAGE */
+.article__section-center {
   display: flex;
   justify-content: space-around;
-  justify-content: center;
+  justify-content: space-around;
 }
-.main__article .article__section-center .section-center--text {
-  border: 2px solid red;
+.article__section-center .section-center--text {
+  border: 2px solid #13183F;
 }
-.main__article .article__section-center .section-center--image {
-  transform: translateX(35rem) translateY(-20rem);
-  border: 2px solid red;
+.article__section-center .section-center--image {
+  border: 2px solid #13183F;
   z-index: -1;
 }
-.main__article .article__section-center .section-center--image .card--image {
-  width: 100%;
-  /* transform: translateX(45.5rem) translateY(-25rem); */
-  /* transform: translateX(45%) translateY(-25%); */
+.article__section-center .section-center--image .card--image {
+  width: 90%;
+  transform: translateX(35%) translateY(-25%);
 }
-.main__article .article__section-card {
+
+/* SESSION CARDS */
+.article__section-card {
   display: grid;
-  grid-template-columns: repeat(3, 35rem);
+  grid-template-columns: repeat(3, minmax(0, 35rem));
+  column-gap: 4.5rem;
+  row-gap: 5rem;
+  margin-bottom: 14rem;
+}
+.article__section-card [class^=section-card--] {
+  background: #FFFFFF;
+  border-radius: 5%;
+  border: 2px solid red;
+}
+.article__section-card .cards-image {
+  margin-left: 3.2rem;
+  position: relative;
+  bottom: 2.5rem;
+}
+.article__section-card .card-animation--text {
+  padding: 6.5rem 3.2rem 4rem 3.2rem;
 }
 
 .btn {

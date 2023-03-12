@@ -1,37 +1,55 @@
 @use "../abstracts/mixins";
+@use "../abstracts/variables";
 
-.main{
-    max-width: 1140px;
-    margin: 0 auto;
+.main {
+    max-width: 114rem;
+    @include mixins.margin-auto;
 }
 
-.main__article{
+/* SESSION TEXT/IMAGE */
+.article__section-center {
+    @include mixins.flex;
+    justify-content: space-around;
 
-    .article__section-center{
-        @include mixins.flex;
-        justify-content: center;
-
-        .section-center--text{
-            border: 2px solid red;
-            
-        }
-
-        .section-center--image{
-            transform: translateX(35rem) translateY(-20rem);
-            border: 2px solid red;
-            z-index: -1;
-
-            .card--image{
-                width: 100%;
-                /* transform: translateX(45.5rem) translateY(-25rem); */
-                /* transform: translateX(45%) translateY(-25%); */
-            }
-        
-        }
+    .section-center--text {
+        border: 2px solid variables.$themedark-color;
     }
 
-    .article__section-card{
-        display: grid;
-        grid-template-columns: repeat(3,35rem);
+    .section-center--image {
+        border: 2px solid variables.$themedark-color;
+        z-index: -1;
+
+        .card--image {
+            width: 90%;
+            transform: translateX(35%) translateY(-25%);
+        }
     }
 }
+
+
+/* SESSION CARDS */
+.article__section-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 35rem));
+    column-gap: 4.5rem;
+    row-gap: 5rem;
+    margin-bottom: 14rem;
+
+    [class^="section-card--"] {
+        background: variables.$color-btn;
+        border-radius: 5%;
+        border: 2px solid red;
+    }
+
+    .cards-image {
+        margin-left: 3.2rem;
+        position: relative;
+        bottom: 2.5rem;
+    }
+
+    .card-animation--text {
+        padding: 6.5rem 3.2rem 4rem 3.2rem;
+    }
+}
+
+
