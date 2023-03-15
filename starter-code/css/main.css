@@ -22,6 +22,7 @@ html body {
   justify-content: space-around;
   align-items: center;
   margin-top: 3.8rem;
+  margin-bottom: 18.5rem;
 }
 .header__nav__img {
   height: 2.7rem;
@@ -39,16 +40,30 @@ html body {
   justify-content: space-around;
   justify-content: space-around;
 }
-.article__section-center .section-center--text {
-  border: 2px solid #13183F;
+.article__section-center .center--text .center--title {
+  font-size: 5.6rem;
+  font-weight: 800;
+  line-height: 7rem;
+  color: #13183F;
+  margin-bottom: 2.9rem;
 }
-.article__section-center .section-center--image {
+.article__section-center .center--text .center--paragraph {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  font-weight: 500;
+  color: #83869a;
+  margin-bottom: 4rem;
+  width: 80%;
+}
+.article__section-center .center--image {
   border: 2px solid #13183F;
   z-index: -1;
 }
-.article__section-center .section-center--image .card--image {
-  width: 90%;
-  transform: translateX(35%) translateY(-25%);
+.article__section-center .center--image .card--image {
+  width: 100%;
+  /* transform: translateX(95%) translateY(-85%); */
 }
 
 /* SESSION CARDS */
@@ -62,7 +77,6 @@ html body {
 .article__section-card [class^=section-card--] {
   background: #FFFFFF;
   border-radius: 5%;
-  border: 2px solid red;
 }
 .article__section-card .cards-image {
   margin-left: 3.2rem;
@@ -70,7 +84,7 @@ html body {
   bottom: 2.5rem;
 }
 .article__section-card .card-animation--text {
-  padding: 6.5rem 3.2rem 4rem 3.2rem;
+  padding: 4rem 3.2rem 4rem 3.2rem;
 }
 
 .btn {
@@ -81,6 +95,7 @@ html body {
   cursor: pointer;
   border: none;
 }
+
 .btn-nav {
   font-size: 1.8rem;
   line-height: 2.8rem;
@@ -96,18 +111,24 @@ html body {
 .btn-nav:active {
   background-color: #3645b5;
 }
+
+.btn-article {
+  background-image: linear-gradient(to bottom, #ff6f48, #f02AA6);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .btn-footer {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, rgb(72, 81, 255), rgb(240, 42, 166));
+  background-image: linear-gradient(to bottom, rgb(72, 81, 255), #f02AA6);
 }
 .btn-footer:hover {
-  background: #f350b6;
-}
-.btn-footer:active {
-  background: #fab9e2;
+  background: #ffc1d4;
 }
 
 .footer__nav {

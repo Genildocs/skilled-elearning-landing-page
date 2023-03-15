@@ -11,17 +11,35 @@
     @include mixins.flex;
     justify-content: space-around;
 
-    .section-center--text {
-        border: 2px solid variables.$themedark-color;
+    .center--text {
+        
+
+        .center--title{
+            font-size: 5.6rem;
+            font-weight: 800;
+            line-height: 7rem;
+            color: variables.$themedark-color;
+            margin-bottom: 2.9rem;            
+        }
+
+        .center--paragraph{
+            @include mixins.font-paragraph;
+            font-weight: 500;
+            color: variables.$color-grey-fort;
+            margin-bottom: 4rem;
+            width: 80%;
+        }
+        
     }
 
-    .section-center--image {
+    .center--image {
         border: 2px solid variables.$themedark-color;
         z-index: -1;
+        
 
         .card--image {
-            width: 90%;
-            transform: translateX(35%) translateY(-25%);
+            width: 100%;
+            /* transform: translateX(95%) translateY(-85%); */
         }
     }
 }
@@ -38,7 +56,7 @@
     [class^="section-card--"] {
         background: variables.$color-btn;
         border-radius: 5%;
-        border: 2px solid red;
+        
     }
 
     .cards-image {
@@ -48,7 +66,7 @@
     }
 
     .card-animation--text {
-        padding: 6.5rem 3.2rem 4rem 3.2rem;
+        padding: 4rem 3.2rem 4rem 3.2rem;
     }
 }
 

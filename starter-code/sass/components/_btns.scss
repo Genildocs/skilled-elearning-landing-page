@@ -7,34 +7,38 @@
   color: variables.$color-btn;
   border-radius: 5rem;
   cursor: pointer;
-  border: none;
+  border: none;   
+}
 
-  &-nav {
-    @include mixins.font-paragraph;
-    background-color: variables.$themedark-color;
-    box-shadow: 0 0.9rem 0.8rem variables.$color-grey;
-    transition: all 0.5s;
-    &:hover {
-      background-color: lighten(variables.$themedark-color, 8%);
-    }
 
-    &:active {
-      background-color: lighten(variables.$themedark-color, 30%);
-    }
+.btn-nav {
+  @include mixins.font-paragraph;
+  background-color: variables.$themedark-color;
+  box-shadow: 0 0.9rem 0.8rem variables.$color-grey;
+  transition: all 0.5s;
+  &:hover {
+    background-color: lighten(variables.$themedark-color, 8%);
   }
 
-  &-footer {
-    @include mixins.font-paragraph;
-    background-image: linear-gradient(to  bottom, variables.$color-blue, variables.$color-pink-fort);
-    
-    &:hover{
-      background: lighten(variables.$color-pink-fort, 8%);
-    }
-
-    &:active{
-      background: lighten(variables.$color-pink-fort, 30%);
-    }
+  &:active {
+    background-color: lighten(variables.$themedark-color, 30%);
   }
+}
 
+
+.btn-article{
+  background-image: linear-gradient(to bottom, variables.$color-orange, variables.$color-pink-fort);
+  @include mixins.font-paragraph;
+
+}
+
+.btn-footer {
+  @include mixins.font-paragraph;
+  background-image: linear-gradient(to  bottom, variables.$color-blue, variables.$color-pink-fort);
+  
+  
+  &:hover{
+    background: lighten(variables.$color-pink-light, 5%);
+  }
   
 }
