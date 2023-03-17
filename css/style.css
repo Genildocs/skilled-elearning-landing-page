@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to left bottom, rgba(26, 36, 24, 0), red);
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

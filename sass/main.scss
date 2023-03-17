@@ -1,6 +1,9 @@
-@use "base/base";
-@use "components/header";
-@use "components/article";
-@use "abstracts/mixins";
-@use "components/btns";
-@use "components/footer"
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to  left bottom, rgba(26, 36, 24, 0), red);
+    min-height: 100vh;
+}
