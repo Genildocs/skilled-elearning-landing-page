@@ -1,9 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@use "./base";
+@use "./components";
+@use "./layout";
+@use "./mixins";
 
-body{
-    background-image: linear-gradient(to  left bottom, rgba(26, 36, 24, 0), red);
-    min-height: 100vh;
-}

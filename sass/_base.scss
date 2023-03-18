@@ -1,0 +1,15 @@
+:root{
+    --color-white: #fff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to  left bottom, var(--color-white), red);
+    min-height: 100vh;
+    /* background: var(--color-white); */
+}
