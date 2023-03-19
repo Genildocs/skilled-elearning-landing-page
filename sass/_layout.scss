@@ -1,0 +1,7 @@
+@use "./mixins";
+
+.header{
+    height: 10vh;
+    @include mixins.flex;
+    align-items: center;
+}

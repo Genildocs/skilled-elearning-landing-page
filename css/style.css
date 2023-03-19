@@ -1,5 +1,13 @@
 :root {
-  --color-white: #fff;
+  --color-white: #ffffff;
+  --color-dark: #13183f;
+  --color-dark-light: #666ca3;
+  --color-pink: #ffa7c3;
+  --color-pink-dark-1: #f74780;
+  --color-pink-dark-2: #f02aa6;
+  --color-grey: #83869a;
+  --color-blue: #4851ff;
+  --color-orange: #ff6f48;
 }
 
 * {
