@@ -7,18 +7,33 @@
     --color-pink-dark-2: #f02aa6;
     --color-grey: #83869a;
     --color-blue: #4851ff;
-    --color-orange: #ff6f48;    
+    --color-orange: #ff6f48;
+    --font-size-paragraph-btn: 1.8rem;
+    --line-height-paragraph-btn: 2.8rem;    
 
 }
 
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;    
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;   
+}
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body{
     background-image: linear-gradient(to  left bottom, var(--color-white), red);
+    font-family: 'Plus Jakarta Sans', sans-serif;
     min-height: 100vh;
     /* background: var(--color-white); */
 }

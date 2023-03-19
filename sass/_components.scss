@@ -1,2 +1,29 @@
-@use "./mixins";
+////Buttons
+
+.btn{
+    font-size: var(--font-size-paragraph-btn);
+    line-height: var(--line-height-paragraph-btn);
+    padding: 1.4rem 3.1rem;
+    font-weight: 700;
+    width: 16.7rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 5rem;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all .2s;
+    
+    &:hover{
+        transform: translateY(-3px)
+    }
+
+    &:active{
+        transform: translateY(-1px);
+        background-color: azure;
+    }
+}
+
+.header__btn{
+    background-color: var(--color-dark);
+}
 
