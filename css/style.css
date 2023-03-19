@@ -67,7 +67,7 @@ body {
 }
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
 }
 .btn:hover::after {
   transform: scaleX(1.3) scaleY(1.4);
@@ -85,6 +85,18 @@ body {
   box-shadow: none;
 }
 
+.center-content {
+  border: 2px solid rgb(241, 64, 10);
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards {
+  border: 2px solid rgb(255, 74, 2);
+  background-image: linear-gradient(180deg, var(--color-white), var(--color-grey));
+}
+
 .header {
   height: 10vh;
   display: flex;
@@ -99,5 +111,9 @@ body {
   align-items: center;
   height: 10vh;
 }
+
+/* .main{
+    height: 100vh;
+} */
 
 /*# sourceMappingURL=style.css.map */

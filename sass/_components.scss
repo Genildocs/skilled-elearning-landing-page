@@ -1,3 +1,4 @@
+@use "./mixins";
 ////Buttons
 
 .btn{
@@ -63,3 +64,18 @@
 
 }
 
+///SESSION CENTER
+///
+.center-content{
+    border: 2px solid rgb(241, 64, 10);
+    background-color: green;
+    @include mixins.flex;
+}
+
+
+///SESSION CARDS
+/// 
+.cards{
+    border: 2px solid rgb(255, 74, 2);
+    background-image: linear-gradient(180deg, var(--color-white), var(--color-grey));
+}
