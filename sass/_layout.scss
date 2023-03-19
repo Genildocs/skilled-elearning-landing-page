@@ -5,3 +5,11 @@
     @include mixins.flex;
     align-items: center;
 }
+
+.footer-nav{
+    background-color: var(--color-dark);
+    @include mixins.flex;
+    align-items: center;
+    height: 10vh;
+
+}
