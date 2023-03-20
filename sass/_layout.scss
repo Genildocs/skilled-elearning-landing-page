@@ -1,9 +1,15 @@
 @use "./mixins";
 
+.container{
+    padding: 0 16.5rem;    
+}
+
 .header{
-    height: 10vh;
+    height: 15vh;
     @include mixins.flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 18.6rem;
 }
 
 .footer-nav{
@@ -14,6 +20,3 @@
 
 }
 
-/* .main{
-    height: 100vh;
-} */

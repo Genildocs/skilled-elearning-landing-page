@@ -31,6 +31,7 @@ html {
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
   /* background: var(--color-white); */
 }
 
@@ -87,21 +88,48 @@ body {
 
 .center-content {
   border: 2px solid rgb(241, 64, 10);
-  background-color: green;
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
+}
+.center-content .center-text {
+  border: 2px solid red;
+  align-self: center;
+}
+.center-content .center-image {
+  border: 2px solid red;
+  position: relative;
+  height: 99rem;
+  width: 99rem;
+}
+.center-content .center-image__image {
+  /* width: 100%;
+  object-fit: contain; */
+  position: absolute;
+  top: -20%;
+  right: -45%;
+  transform: translate(10%, -30%);
+  z-index: -1;
 }
 
 .cards {
   border: 2px solid rgb(255, 74, 2);
   background-image: linear-gradient(180deg, var(--color-white), var(--color-grey));
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  padding: 0 16.5rem;
 }
 
 .header {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 18.6rem;
 }
 
 .footer-nav {
@@ -111,9 +139,5 @@ body {
   align-items: center;
   height: 10vh;
 }
-
-/* .main{
-    height: 100vh;
-} */
 
 /*# sourceMappingURL=style.css.map */
