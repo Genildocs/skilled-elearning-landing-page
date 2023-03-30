@@ -1,22 +1,15 @@
-@use "./mixins";
-
-.container{
-    padding: 0 16.5rem;    
-}
-
 .header{
-    height: 15vh;
-    @include mixins.flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 18.6rem;
+    background-color: aqua;
 }
 
-.footer-nav{
-    background-color: var(--color-dark);
-    @include mixins.flex;
-    align-items: center;
-    height: 10vh;
-
+.content{
+    background-color:brown;
 }
 
+.cards{
+    background-color:blue;
+}
+
+.footer{
+    background-color:burlywood;
+}
