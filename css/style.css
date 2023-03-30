@@ -107,18 +107,23 @@ body {
 
 .header {
   background-color: aqua;
+  grid-column: 1/-1;
 }
 
 .content {
   background-color: brown;
+  grid-row: 2/3;
+  grid-column: 2/6;
 }
 
 .cards {
   background-color: blue;
+  grid-column: 2/6;
 }
 
 .footer {
   background-color: burlywood;
+  grid-column: 1/-1;
 }
 
 /*# sourceMappingURL=style.css.map */
