@@ -1,0 +1,17 @@
+{
+  "name": "skilled-elearning-landing-page",
+  "version": "1.0.0",
+  "description": "Project Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite-server": "lite-server",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "genildocs",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^8.0.0"
+  }
+}
