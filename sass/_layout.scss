@@ -1,21 +1,33 @@
-.header{
-    background-color: aqua;
-    grid-column: 1 / -1;
+.header{    
+    grid-column: 2 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;    
+    margin-bottom: 10rem;
 }
 
-.content{
-    background-color:brown;
+.content{    
     grid-row: 2 / 3;
     grid-column: 2 / 6;
-    
+    display: flex;
 }
 
-.cards{
-    background-color:blue;
+.card{
+    margin-bottom: 14rem;
     grid-column: 2 / 6;
+    display: grid;
+    grid-template-rows: repeat(2,35rem);
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
+    column-gap: 3rem;
+    row-gap: 5.5rem;
 }
 
 .footer{
-    background-color:burlywood;
+    background-color:var(--color-dark);
     grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }

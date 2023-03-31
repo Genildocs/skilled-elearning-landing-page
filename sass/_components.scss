@@ -53,8 +53,8 @@
     }
 }
 
-.center-text__btn {
-
+.content-text__button {
+    
     background-image: linear-gradient(var(--color-orange), var(--color-pink-dark-1));
 
     &:hover {
@@ -66,10 +66,98 @@
     }
 }
 
-.footer-nav__btn {
+.footer__btn {
     background-image: linear-gradient(var(--color-blue), var(--color-pink-dark-1));
 
     &::after {
         background-image: linear-gradient(var(--color-blue), var(--color-pink-dark-1))
     }
+}
+
+
+//Session content components
+
+.content-text{
+    &__title{
+        color: var(--color-dark);
+        font-size: 5.6rem;
+        font-weight: 800;
+        line-height: 7.1rem;
+        margin-bottom: 2.5rem;
+        width: 50%;
+    }
+
+    &__text{
+        margin-bottom: 4rem;
+        font-size: var(--font-size-paragraph-btn);
+        color: var( --color-grey);
+        line-height: var(--line-height-paragraph-btn);
+        width: 40%;
+    }
+}
+
+.figure{
+    position: relative;
+
+    &__img{
+        
+        position: absolute;
+        bottom: 0;
+        left: -25rem;
+        z-index: -1;
+        
+        @media (max-width:1024px){
+            position: relative;
+            width: 80%;
+        }
+    }
+
+}
+
+//Session cards
+
+.card{
+    
+    [class^="card-"]{
+        border-radius: 1rem;
+        background-color: white;
+    }
+
+    &-1{
+        background-image: linear-gradient(var(--color-orange), var(--color-pink-dark-1));       
+        padding: 6.4rem 3.2rem;
+        padding-bottom: 14rem;
+
+        &__title{
+           font-size: 3.8rem;
+           font-weight: 800;
+           line-height: 4rem;
+           color: white;
+        }
+    }
+
+    
+}
+
+//components card
+
+.heading-3{
+    color: var(--color-dark);
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 800;
+}
+
+.text-card{
+    font-size: var(--font-size-paragraph-btn);
+    line-height: var(--line-height-paragraph-btn);
+    font-weight: 500;
+    color: var(--color-grey);
+}
+
+.card-link{
+    text-decoration: none;
+    font-size: var(--font-size-paragraph-btn);
+    line-height: var(--line-height-paragraph-btn);
+    color: var(--color-pink-dark-1);
 }

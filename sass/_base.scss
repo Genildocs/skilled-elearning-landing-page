@@ -37,11 +37,12 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     /* background: var(--color-white); */
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%)  
 }
 
 .container{
     display: grid;
     grid-template-rows: 1fr 60vh min-content 1fr;
-    grid-template-columns: 1fr repeat(4,minmax(min-content, 28.5rem)) 1fr; 
+    grid-template-columns: 1fr repeat(4,minmax(min-content, 28.5rem)) 1fr;   
     
 }
