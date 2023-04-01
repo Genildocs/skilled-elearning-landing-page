@@ -123,7 +123,7 @@ body {
   .content-text__title {
     font-size: 4rem;
     line-height: 5rem;
-    width: 80%;
+    width: 90%;
   }
 }
 .content-text__text {
@@ -173,6 +173,12 @@ body {
   font-weight: 800;
   line-height: 4rem;
   color: white;
+}
+@media (max-width: 550px) {
+  .card1__title {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
 }
 
 .heading-3 {
