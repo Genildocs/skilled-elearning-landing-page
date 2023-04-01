@@ -41,6 +41,11 @@ body {
   grid-template-rows: 1fr 60vh min-content 1fr;
   grid-template-columns: 1fr repeat(4, minmax(min-content, 28.5rem)) 1fr;
 }
+@media (max-width: 550px) {
+  .container {
+    grid-template-rows: 1fr;
+  }
+}
 
 .btn {
   font-size: var(--font-size-paragraph-btn);
@@ -114,12 +119,26 @@ body {
   margin-bottom: 2.5rem;
   width: 50%;
 }
+@media (max-width: 550px) {
+  .content-text__title {
+    font-size: 4rem;
+    line-height: 5rem;
+    width: 100%;
+  }
+}
 .content-text__text {
   margin-bottom: 4rem;
   font-size: var(--font-size-paragraph-btn);
   color: var(--color-grey);
   line-height: var(--line-height-paragraph-btn);
   width: 40%;
+}
+@media (max-width: 550px) {
+  .content-text__text {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    width: 100%;
+  }
 }
 
 .figure {
@@ -131,23 +150,25 @@ body {
   left: -25rem;
   z-index: -1;
 }
-@media (max-width: 1024px) {
+@media (max-width: 550px) {
   .figure__img {
     position: relative;
-    width: 80%;
+    width: 100%;
+    left: 0;
   }
 }
 
 .card [class^=card-] {
-  border-radius: 1rem;
+  border-radius: 2rem;
   background-color: white;
 }
-.card-1 {
+.card1 {
   background-image: linear-gradient(var(--color-orange), var(--color-pink-dark-1));
   padding: 6.4rem 3.2rem;
   padding-bottom: 14rem;
+  border-radius: 2rem;
 }
-.card-1__title {
+.card1__title {
   font-size: 3.8rem;
   font-weight: 800;
   line-height: 4rem;
@@ -189,6 +210,11 @@ body {
   grid-column: 2/6;
   display: flex;
 }
+@media (max-width: 550px) {
+  .content {
+    flex-direction: column;
+  }
+}
 
 .card {
   margin-bottom: 14rem;
@@ -198,6 +224,11 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
   column-gap: 3rem;
   row-gap: 5.5rem;
+}
+@media (max-width: 550px) {
+  .card {
+    grid-template-rows: repeat(2, 30rem);
+  }
 }
 
 .footer {

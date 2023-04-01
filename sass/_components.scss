@@ -85,6 +85,12 @@
         line-height: 7.1rem;
         margin-bottom: 2.5rem;
         width: 50%;
+
+        @media (max-width:550px){
+            font-size: 4rem;
+            line-height: 5rem;
+            width: 100%;
+        }
     }
 
     &__text{
@@ -93,11 +99,18 @@
         color: var( --color-grey);
         line-height: var(--line-height-paragraph-btn);
         width: 40%;
+
+        @media (max-width: 550px){
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            width: 100%;
+        }
     }
 }
 
 .figure{
     position: relative;
+    
 
     &__img{
         
@@ -106,9 +119,10 @@
         left: -25rem;
         z-index: -1;
         
-        @media (max-width:1024px){
+        @media (max-width:550px){
             position: relative;
-            width: 80%;
+            width: 100%;
+            left: 0;
         }
     }
 
@@ -119,14 +133,15 @@
 .card{
     
     [class^="card-"]{
-        border-radius: 1rem;
+        border-radius: 2rem;
         background-color: white;
     }
 
-    &-1{
+    &1{
         background-image: linear-gradient(var(--color-orange), var(--color-pink-dark-1));       
         padding: 6.4rem 3.2rem;
         padding-bottom: 14rem;
+        border-radius: 2rem;
 
         &__title{
            font-size: 3.8rem;

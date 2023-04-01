@@ -45,4 +45,7 @@ body{
     grid-template-rows: 1fr 60vh min-content 1fr;
     grid-template-columns: 1fr repeat(4,minmax(min-content, 28.5rem)) 1fr;   
     
+    @media (max-width: 550px){
+        grid-template-rows: 1fr;
+    }
 }
