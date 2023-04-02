@@ -4,4 +4,4 @@ Hello, this was my solution to the Skilled e-learning landing page challenge on 
 
 
 Mobile: 
-[](./screen/mobile.png)
+[(./screen/mobile.png)]
