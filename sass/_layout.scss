@@ -33,7 +33,7 @@
     row-gap: 5.5rem;
     @media(max-width:550px){        
         padding: 0 1.5rem;
-        grid-template-rows: repeat(2,30rem);
+        grid-template-rows: auto;
         margin-bottom: 8rem;
         row-gap: 1.6rem;
     }
